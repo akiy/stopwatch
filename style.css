@@ -29,22 +29,32 @@ body {
     flex-direction: column;
 }
 
+.timer-display {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
 .milliseconds,
 .seconds,
 .minutes,
 .dots {
     font-size: 5rem;
-    padding: 1rem;
-    border: 1px solid #333;
+    padding: .5rem;
     margin: .5rem;
 }
 
 .btn-start,
 .btn-stop,
 .btn-reset {
-    font-size: 4rem;
+    font-size: 2.3rem;
+    padding: .7rem;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #333;
+    border-radius: 3px;
+    outline: none;
 }
 
-.timer-display {
-    margin-bottom: 2rem;
-}
