@@ -27,22 +27,22 @@ const renderFormat = function(elapsedTime) {
 };
 
 const timeRunning = function() {
-  
+   
     milliseconds++;
-    millisecondsInput.textContent = renderFormat(milliseconds);
-    
    
     if (milliseconds > 99) {
         milliseconds = 0;
-        seconds++;
-        secondsInput.textContent = renderFormat(seconds);
+        seconds++;  
     }
 
     if (seconds > 59) {
         seconds = 0
-        minutes++; 
-        minutesInput.textContent = renderFormat(minutes);
+        minutes++;  
     }
+
+    millisecondsInput.textContent = renderFormat(milliseconds);
+    secondsInput.textContent = renderFormat(seconds);
+    minutesInput.textContent = renderFormat(minutes);
 };
 
 const startStopWatch = function() {
