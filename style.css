@@ -1,0 +1,50 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 768px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.milliseconds,
+.seconds,
+.minutes,
+.dots {
+    font-size: 5rem;
+    padding: 1rem;
+    border: 1px solid #333;
+    margin: .5rem;
+}
+
+.btn-start,
+.btn-stop,
+.btn-reset {
+    font-size: 4rem;
+}
+
+.timer-display {
+    margin-bottom: 2rem;
+}
